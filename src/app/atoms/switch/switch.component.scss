@@ -1,0 +1,30 @@
+.wrapper {
+    width: 40px;
+    height: 21px;
+    border: 1px solid #666;
+    border-radius: 15px;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+
+    -webkit-box-shadow: inset 130px 10px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 1px 1px 4px 1px rgba(0,0,0,0.75);
+
+    .dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background: #666;
+        position: relative;
+        top: 2px;
+        left: 2px;
+    }
+    &.active {
+        background-color: #6F74BA;
+        .dot {
+            background: white;
+            left: 20px;
+        } 
+    }
+}
